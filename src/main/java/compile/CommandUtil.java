@@ -10,6 +10,7 @@ public class CommandUtil {
     // stderrFile 表示标准错误结果重定向到哪个文件中.
     public static int run(String cmd, String stdoutFile,
                           String stderrFile) throws IOException, InterruptedException {
+
         // 1. 获取 Runtime 对象. Runtime 对象是一个单例的.只有这一个runtime对象，不可以通过New来创建
         Runtime runtime = Runtime.getRuntime();
         // 2. 通过 Runtime 对象中的 exec 方法来执行一个指令.  首先创建一个子进程然后进行程序替换（用户端）
