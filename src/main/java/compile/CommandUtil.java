@@ -41,7 +41,7 @@ public class CommandUtil {
         }
         // 5. 为了确保 子进程 先执行完, 需要加上进程等待.
         //    父进程会在 waitFor 阻塞等待, 直到子进程执行结束, 再继续往下执行.
-        int exitCode = process.waitFor();
+        int exitCode = process.waitFor();//当进程(父进程获取到子进程的退出码)结束之后会返回一个退出码
         return exitCode;
     }
 
