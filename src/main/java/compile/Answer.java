@@ -1,6 +1,6 @@
 package compile;
 
-public class Answer {
+public class Answer {//编译执行后输出的结果
     // 通过 error 表示当前的错误类型.
     // 约定 error 为 0 表示没错误. error 为 1 表示编译出错. error 为 2 表示运行出错.
     private int error;
