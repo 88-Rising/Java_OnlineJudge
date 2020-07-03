@@ -85,7 +85,7 @@ public class ProblemDAO {
         // 2. 拼装 SQL 语句
         String sql = "insert into oj_table values (null, ?, ?, ?, ?, ?)";
         PreparedStatement statement = null;
-        try {
+        try {//设用占位符的方式去设置属性
             statement = connection.prepareStatement(sql);
             statement.setString(1, problem.getTitle());
             statement.setString(2, problem.getLevel());
