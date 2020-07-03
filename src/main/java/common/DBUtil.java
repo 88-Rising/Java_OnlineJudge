@@ -11,9 +11,9 @@ import java.sql.SQLException;
 public class DBUtil {
     private static final String URL = "jdbc:mysql://127.0.0.1:3306/java10_oj?characterEncoding=utf8&useSSL=true";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "";
+    private static final String PASSWORD = "123456";
 
-    private static volatile DataSource dataSource = null;
+    private static volatile DataSource dataSource = null;//可见性
 
     private DBUtil() {}
 
