@@ -17,6 +17,7 @@ public class ProblemServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         String id = req.getParameter("id");
         if (id == null || "".equals(id)) {
             // 没有 id 这个参数, 执行 "查找全部" 逻辑
