@@ -43,6 +43,7 @@ public class CompileServlet extends HttpServlet {
 
     // 这个类用于辅助构造最终响应的 body 数据
     static class CompileResponse {
+
         private int ok;
         private String reason;
         private String stdout;
